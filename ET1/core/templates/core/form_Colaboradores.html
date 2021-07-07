@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArteTodo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'core/css/styles.css'%}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-sm navbar-light fondobar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand" href="#">
+              <img src="img/logo_transparent.png" class="logonav" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link titulos" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link titulos" href="galeria.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link titulos" href="quienes_somos.html">Quienes Somos</a>
+                </li>          
+              </ul>
+            </div>                        
+        </nav>
+        
+        <!--Logo-->
+        <div class="container my-3 container1" style="background-color: rgb(90, 96, 107);" >
+            <img src="img/Banner2.png" class="banner center">
+        </div>
+        <hr>
+<br>
+  <div class="container">
+    <h1>Registro de Colaborador</h1>
+  </div>
+    <div class="container">
+        <form method="POST" action="" id="formulario">
+          {% csrf_token %}
+          <div class="form-group">
+          {{ form.as_table}}
+          </div>
+          <br>
+          <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+          <input type="reset" class="btn btn-primary" id="limpar" value="Limpiar">
+          <div id="error" class="alert alert-danger" role="alert"></div> 
+        </form>
+    </div>
+        <br> 
+
+    
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Quienes Somos</h4>
+              <p><a href="quienes_somos.html" class="quienessomos">Acerca de Nosotros</a></p>
+              <p><a href="Formulario1.html" class="quienessomos">Soporte</a></p>      
+              <p><a href="Dias.html" class="quienessomos">Días de Atención</a></p>
+              <p><a href="Formulario2.html" class="quienessomos">Formulario Concurso</a></p> 
+            </div>
+          
+          <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Contacto</h4>
+              <a href="#">
+                <img src="img/gmail.png" class="redessociales">
+              </a> 
+              <br> 
+              <a href="#">
+              <img src="img/phone.png" class="redessociales">
+              </a>
+              <hr>
+              <button onclick="MostrarFecha()" class="btn-primary">Fecha</button>
+              <p id="demo"></p>
+          </div>
+            <div class="col-lg-4">
+              <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+              <a href="#">
+              <img src="img/twitter.png" class="redessociales">
+              </a>
+              <br>
+              <a href="#">
+              <img src="img/facebook.png" class="redessociales">
+              </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+  <!--Copyright-->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container"><small>FelipeGarcía,©Copyright Derechos Reservados</small></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
+  <script src="js/script.js"></script>
+            
+</body>
+</html>
