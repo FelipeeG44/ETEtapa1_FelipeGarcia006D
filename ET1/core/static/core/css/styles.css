@@ -141,38 +141,10 @@ div.polaroid {
     width: 75px;
 }
 
-input {
-    float: left;
-    width: 200px;
-    margin-bottom: 10px;
-}
 
-label {
-    clear: both;
-    float: left;
-    width: 180px;
-}
 
-button {
-    clear: both;
-    float: left;
-    width: 50px;
-}
 
-.error-control {
-    border: 1px solid red;
-}
 
-label.error {
-    color: red;
-    width: 300px;
-    font-size: 0.8em;
-    margin-top: -5px;
-    margin-bottom: 10px;
-}
 
-#caja{
-    margin-top:50px;
-    margin-left:20px;
 
-}
+

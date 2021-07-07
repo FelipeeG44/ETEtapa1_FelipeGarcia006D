@@ -40,41 +40,15 @@
         <div class="container" >
           <form method="POST" action="" id="formulario">
             {% csrf_token %}
-            <div class="row">
+            
             <div class="form-group">
-              {{colaboradores_form.idColaboradores.label}}
-              {{colaboradores_form.idColaboradores}}
+              {{ form.as_table }}
             </div>
-            <div class="form-group">
-              {{colaboradores_form.nomColaboradores.label}}
-              {{colaboradores_form.nomColaboradores}}
-            </div>
-            </div>
-            <div class="row">
-            <div class="form-group">
-              {{colaboradores_form.telefono.label}}
-              {{colaboradores_form.telefono}}
-            </div>
-            <div class="form-group">
-              {{colaboradores_form.direccion.label}}
-              {{colaboradores_form.direccion}}
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group">
-              {{colaboradores_form.email.label}}
-              {{colaboradores_form.email}}
-            </div>
-            <div class="form-group">
-              {{colaboradores_form.pais.label}}
-              {{colaboradores_form.pais}}
-            </div>
-          </div>
 
             <br>
             <div class="row" >
               <div class="col">
-              <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+              <input type="submit" class="btn btn-danger" id="enviar" value="Modificar">
             </div>
             <div class="col">
               <input type="reset" class="btn btn-primary" id="limpar" value="Limpiar">
@@ -83,7 +57,7 @@
               <div id="error" class="alert alert-danger" role="alert"></div> 
             </div>
             </div>
-            {{ form.as_table }}
+            
         </form>
     </div>
         
