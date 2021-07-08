@@ -15,7 +15,7 @@ def form_Colaboradores(request):
         colaboradores_form = ColaboradoresForm(request.POST)
         if colaboradores_form.is_valid():
               colaboradores_form.save()
-              return redirect('form_Colaboradores')
+              return redirect('home')
     else:
         colaboradores_form=ColaboradoresForm()
 
