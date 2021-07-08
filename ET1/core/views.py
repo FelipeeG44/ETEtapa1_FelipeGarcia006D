@@ -25,7 +25,7 @@ def form_Colaboradores(request):
 def ver_Colaboradores(request):
     colaborador=Colaboradores.objects.all()
 
-    
+
     return render (request, 'core/ver_Colaboradores.html',{'colaborador':colaborador})
 
 def form_mod_Colaboradores(request, id):
@@ -42,3 +42,9 @@ def form_mod_Colaboradores(request, id):
             return redirect('home')
 
     return render(request, 'core/form_mod_Colaboradores.html', datos)
+
+def form_del_Colaboradores(request, id):
+
+    colaborador=Colaboradores.objects.get(idColaboradores=id)
+    colaborador.delete()
+    return redirect(to="ver_Colaboradores")

@@ -1,0 +1,9 @@
+Django SuperAdmin:
+       Usuario:admin
+       Contraseña:admin123
+
+PATH URLS:
+       Home:http://127.0.0.1:8000
+       Ver Colaboradores:http://127.0.0.1:8000/ver-Colaboradores
+       Formulario Colaboradores:http://127.0.0.1:8000/form-Colaboradores
+       Modificar Colaboradores:http://127.0.0.1:8000/form-mod-Colaboradores

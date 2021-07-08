@@ -1,8 +1,0 @@
-    <div class="container">
-      <table border="1">
-        <tr><td>RUT</td><td>Nombre</td><td>telefono</td><td>Direccion</td><td>email</td><td>Pais</td></tr>
-        {% for co in colaborador %}
-        <tr><td>{{co.idColaboradores}}</td><td>{{co.nomColaboradores}}</td><td>{{co.telefono}}</td><td>{{co.direccion}}</td><td>{{co.email}}</td><td>{{co.pais}}</td></tr>
-        {% end for  %}
-      </table>
-    </div>
