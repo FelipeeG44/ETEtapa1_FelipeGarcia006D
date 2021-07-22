@@ -4,9 +4,9 @@ Django SuperAdmin:
 
 PATH URLS:
        Home:http://127.0.0.1:8000
-       Ver Colaboradores:http://127.0.0.1:8000/ver-Colaboradores
-       Formulario Colaboradores:http://127.0.0.1:8000/form-Colaboradores
-       Modificar Colaboradores:http://127.0.0.1:8000/form-mod-Colaboradores
+       Ver Colaboradores:http://127.0.0.1:8000/ver_Colaboradores
+       Formulario Colaboradores:http://127.0.0.1:8000/form_Colaboradores
+       Modificar Colaboradores:http://127.0.0.1:8000/form_mod_Colaboradores
 
 GitHub link:
-       https://github.com/FelipeeG44/ETEtapa1_FelipeGarcia006D.git
+       https://github.com/FelipeeG44/ET_PGY3121_FORMA_B_FELIPE_GARCIA_SAEZ_006D
