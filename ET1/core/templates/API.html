@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {%load static%}
+        <title>ArteTodo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'core/css/styles.css'%}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("#enviar").click(function()
+                {
+    
+                    $.get("http://127.0.0.1:8000/lista_Colaboradores",
+                        function(data)
+                        {
+                            
+                            $.each(data,function(i,item)
+                            {
+                                $("#colaborador").append("<tr><td>"+item.idColaboradores+"</td><td>"+item.nomColaboradores +
+                                "</td><td>"+item.telefono+"</td><td>"+item.direccion+"</td><td>"+item.email+"</td><td>"+item.pais+"</td></tr>");
+                                
+    
+                            });
+    
+                        });
+                });
+    
+               
+            })
+        
+        </script>
+        <style>
+            #caja{
+                margin-left:40px;
+            }
+        </style>
+
+
+
+
+        <body>
+            <!-- Navbar-->
+            <nav class="navbar navbar-expand-sm navbar-light fondobar">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <a class="navbar-brand" href="#">
+                  <img src="#" class="logonav" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="opciones">   
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link titulos" href="#">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                      
+                      <a class="nav-link titulos" href="#}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link titulos" href="#">\\\\\\\\\\</a>
+                    </li>          
+                  </ul>
+                </div>                        
+            </nav>
+            <br><br>
+            <div class="container">
+            <h1>Lista de Colaboradores</h1></div>
+            <br>
+            <div class="container">
+            <div id="caja">
+                <button class="btn btn-primary" type="button" id="enviar">Cargar datos</button>
+                 
+            </div></div>
+            <br><br>
+            <div class="container">
+            <table class="table table-striped" id="colaborador" border="2">
+                <thead>
+                    <tr>
+                        <th scope="col">RUT</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+        
+            </table>
+        </div>
+
+
+    
+
+    
+
+
+             <!-- Footer-->
+             <footer class="footer text-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">Quienes Somos</h4>
+                      <p><a href="#" class="quienessomos">Acerca de Nosotros</a></p>
+                      <p><a href="#" class="quienessomos">Soporte</a></p>      
+                      
+                    </div>
+                  
+                  <div class="col-lg-4 mb-5 mb-lg-0">
+                      <h4 class="text-uppercase mb-4">Contacto</h4>
+                      <a href="#">
+                        <img src="#" class="redessociales">
+                      </a> 
+                      <br> 
+                      <a href="#">
+                      <img src="#" class="redessociales">
+                      </a>
+                      <hr>
+                      
+                  </div>
+                    <div class="col-lg-4">
+                      <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                      <a href="#">
+                      <img src="#" class="redessociales">
+                      </a>
+                      <br>
+                      <a href="#">
+                      <img src="#" class="redessociales">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </footer>
+          <!--Copyright-->
+          <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>FelipeGarcía,©Copyright Derechos Reservados</small></div>
+          </div>
+    
+
+                    
+        </body>
+    </html>
