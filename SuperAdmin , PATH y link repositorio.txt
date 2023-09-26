@@ -9,6 +9,3 @@ PATH URLS:
        Modificar Colaboradores:http://127.0.0.1:8000/form_mod_Colaboradores
        Api en Template:http://127.0.0.1:8000/lista_api
        Api en pagina web:http://127.0.0.1:8000/lista_Colaboradores
-
-GitHub link:
-       https://github.com/FelipeeG44/ET_PGY3121_FORMA_B_FELIPE_GARCIA_SAEZ_006D
