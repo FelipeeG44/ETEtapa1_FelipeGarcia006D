@@ -1,1 +1,2 @@
-# ETEtapa1_FelipeGarcia006D
+Felipe Garcia
+Proyecto Pagina Web Django/Python HTML CSS
